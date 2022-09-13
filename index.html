@@ -21,65 +21,79 @@
 
     <meta name="theme-color" content="#fafafa" />
   </head>
-  <header>
-    <nav class="navbar navbar-expand-lg bg-light">
-      <div class="container-fluid">
-        <a class="navbar-brand" href="#">Navbar</a>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarNavDropdown"
-          aria-controls="navbarNavDropdown"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNavDropdown">
-          <ul class="navbar-nav">
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Features</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Pricing</a>
-            </li>
-            <li class="nav-item dropdown">
-              <a
-                class="nav-link dropdown-toggle"
-                href="#"
-                role="button"
-                data-bs-toggle="dropdown"
-                aria-expanded="false"
-              >
-                Dropdown link
-              </a>
-              <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="#">Action</a></li>
-                <li><a class="dropdown-item" href="#">Another action</a></li>
-                <li>
-                  <a class="dropdown-item" href="#">Something else here</a>
-                </li>
-              </ul>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </nav>
-  </header>
+  <!-- Add your site or application content here -->
+
   <body>
-    <main class="container-fluid">
-      <h1>Heading 1</h1>
-      <section>
+    <header>
+      <nav class="navbar navbar-expand-lg bg-primary">
+        <div class="container-fluid">
+          <a class="navbar-brand text-light" href="#">Navbar</a>
+          <button
+            class="navbar-toggler text-light"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNavDropdown"
+            aria-controls="navbarNavDropdown"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a
+                  class="nav-link active text-light"
+                  aria-current="page"
+                  href="#"
+                  >Home</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-light" href="#">Features</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-light" href="#">Pricing</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle text-light"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Dropdown link
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li>
+                    <a class="dropdown-item" href="#">Something else here</a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main class="container-fluid d-flex flex-wrap">
+      <section class="col-12">
+        <h1 class="text-center">I2Reti ITALIA</h1>
         <article>
           <p>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
             consequat maximus turpis, quis aliquam enim euismod ac. Aliquam
             lectus eros, consectetur a massa at, rutrum imperdiet diam.
           </p>
+        </article>
+        <hr />
+      </section>
+
+      <section class="col-6">
+        <h2>Heading 2</h2>
+        <article>
           <p>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
             consequat maximus turpis, quis aliquam enim euismod ac. Aliquam
@@ -88,14 +102,9 @@
         </article>
       </section>
 
-      <h2>Heading 2</h2>
-      <section>
+      <section class="col-6">
+        <h3>Heading 3</h3>
         <article>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
-            consequat maximus turpis, quis aliquam enim euismod ac. Aliquam
-            lectus eros, consectetur a massa at, rutrum imperdiet diam.
-          </p>
           <p>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
             consequat maximus turpis, quis aliquam enim euismod ac. Aliquam
@@ -103,45 +112,119 @@
           </p>
         </article>
       </section>
-      <h3>Heading 3</h3>
-      <section>
-        <article>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
-            consequat maximus turpis, quis aliquam enim euismod ac. Aliquam
-            lectus eros, consectetur a massa at, rutrum imperdiet diam.
-          </p>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
-            consequat maximus turpis, quis aliquam enim euismod ac. Aliquam
-            lectus eros, consectetur a massa at, rutrum imperdiet diam.
-          </p>
-        </article>
-      </section>
-
-      <!-- Add your site or application content here -->
-      <p>Hello world! This is HTML5 Boilerplate.</p>
     </main>
-    <main class="container-fluid">
-      <img src="img/default.jpg" width="100%" height="25%" />
-      <section>
+    <main class="container-fluid d-flex flex-wrap">
+      <section class="col-12">
+        <img
+          src="img/default.jpg"
+          width="100%"
+          height="300px"
+          alt="descrizione immagine"
+          title="tooltip immagine"
+        />
         <article>
           <p>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
             consequat maximus turpis, quis aliquam enim euismod ac. Aliquam
             lectus eros, consectetur a massa at, rutrum imperdiet diam.
           </p>
+        </article>
+      </section>
+      <section class="col-6 pe-2">
+        <img
+          src="img/default.jpg"
+          width="100%"
+          height="300px"
+          alt="descrizione immagine"
+          title="tooltip immagine"
+        />
+        <article>
           <p>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
             consequat maximus turpis, quis aliquam enim euismod ac. Aliquam
             lectus eros, consectetur a massa at, rutrum imperdiet diam.
           </p>
         </article>
+      </section>
+      <section class="col-6 ps-2">
+        <img
+          src="img/default.jpg"
+          width="100%"
+          height="300px"
+          alt="descrizione immagine"
+          title="tooltip immagine"
+        />
+        <article>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
+            consequat maximus turpis, quis aliquam enim euismod ac. Aliquam
+            lectus eros, consectetur a massa at, rutrum imperdiet diam.
+          </p>
+        </article>
+      </section>
+    </main>
+    <hr />
+    <main class="container-fluid d-flex flex-wrap">
+      <section class="col-12">
+        <h1 class="text-center">Chi Siamo</h1>
+        <article>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
+            consequat maximus turpis, quis aliquam enim euismod ac. Aliquam
+            lectus eros, consectetur a massa at, rutrum imperdiet diam. Lorem
+            ipsum dolor sit amet, consectetur adipiscing elit. Nunc consequat
+            maximus turpis, quis aliquam enim euismod ac. Aliquam lectus eros,
+            consectetur a massa at, rutrum imperdiet diam.
+          </p>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
+            consequat maximus turpis, quis aliquam enim euismod ac. Aliquam
+            lectus eros, consectetur a massa at, rutrum imperdiet diam. Lorem
+            ipsum dolor sit amet, consectetur adipiscing elit. Nunc consequat
+            maximus turpis, quis aliquam enim euismod ac. Aliquam lectus eros,
+            consectetur a massa at, rutrum imperdiet diam.
+          </p>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
+            consequat maximus turpis, quis aliquam enim euismod ac. Aliquam
+            lectus eros, consectetur a massa at, rutrum imperdiet diam. Lorem
+            ipsum dolor sit amet, consectetur adipiscing elit. Nunc consequat
+            maximus turpis, quis aliquam enim euismod ac. Aliquam lectus eros,
+            consectetur a massa at, rutrum imperdiet diam.
+          </p>
+        </article>
+      </section>
+    </main>
+    <main class="container-fluid d-flex flex-wrap justify-content-center">
+      <section class="col-12">
+        <h1>Ricerca per comune</h1>
+        <form class="col-6">
+          <div class="input-group mb-3">
+            <label for="inputComune" class="form-label"></label>
+            <input
+              type="text"
+              class="form-control"
+              id="inputComune"
+              aria-describedby="comuneHelp"
+            />
+            <button
+              class="btn btn-outline-primary"
+              type="submit"
+              id="button-addon2"
+            >
+              Ricerca
+            </button>
+          </div>
+          <!-- <div id="comuneHelp" class="form-text">
+            Inserisci il nome del comune in cui vuoi cercare le sedi
+          </div> -->
+        </form>
       </section>
     </main>
   </body>
   <footer>
     <script src="js/jquery.js"></script>
+    <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
     <script src="js/vendor/modernizr-3.11.2.min.js"></script>
     <script src="js/plugins.js"></script>
     <script src="js/main.js"></script>
@@ -159,6 +242,5 @@
       ga("send", "pageview");
     </script>
     <script src="https://www.google-analytics.com/analytics.js" async></script>
-    <script src="bootstrap/js/bootstrap.min.js"></script>
   </footer>
 </html>
